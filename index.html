@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Radius Previewer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/assets/css/styles.css" />
+    <link rel="stylesheet" href="./public/assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <div class="message">
+          <h1>Border Radius Previewer</h1>
+          <p>Simple border radius previewer app made to train JavaScript :)</p>
+        </div>
+        <div class="content">
+          <div class="left-inputs inputs">
+            <input type="number" class="input left-top-input" value="0" />
+            <input type="number" class="input left-bottom-input" value="0" />
+          </div>
+          <div class="box">
+            <div class="show-code-container">
+              <pre class="show-code"></pre>
+              <div class="copy-text">Copy to Clipboard</div>
+            </div>
+
+            <div class="select-option">
+              <div class="single-border">
+                <input
+                  type="radio"
+                  name="type"
+                  value="single"
+                  class="type"
+                  id="single"
+                  checked
+                />
+                <label for="single">Single Border</label>
+              </div>
+              <div class="all-borders">
+                <input
+                  type="radio"
+                  name="type"
+                  value="all"
+                  class="type"
+                  id="all"
+                />
+                <label for="all">All Borders</label>
+              </div>
+            </div>
+          </div>
+          <div class="right-inputs inputs">
+            <input type="number" class="input right-top-input" value="0" />
+            <input type="number" class="input right-bottom-input" value="0" />
+          </div>
+        </div>
+        <div class="message message-footer">
+          <p>
+            The layout was inspired by
+            <a href="https://border-radius.com/" target="_blank"
+              >this website</a
+            >
+          </p>
+          <p>
+            The project was inspired in
+            <a href="https://github.com/florinpop17/app-ideas" target="_blank"
+              >this app ideas collection</a
+            >
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script src="public/assets/js/main.js" defer></script>
+  </body>
+</html>
