@@ -1,0 +1,32 @@
+
+@media only screen and (max-width: 855px) {
+  .main {
+    width: 90%;
+  }
+
+  .box {
+    margin: 4rem 0;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .message h1 {
+    font-size: 3.4rem;
+  }
+
+  .message p {
+    font-size: 1.4rem;
+  }
+
+  .show-code {
+    font-size: 1.4rem;
+  }
+
+  .select-option {
+    flex-direction: column;
+  }
+
+  .select-option label {
+    font-size: 1.4rem;
+  }
+}
