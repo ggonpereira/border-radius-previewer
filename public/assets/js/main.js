@@ -97,6 +97,9 @@
 
     if (receivedTarget === leftTop) {
       box.removeAttribute("style");
+      rightTop.value = 0;
+      leftBottom.value = 0;
+      rightBottom.value = 0;
       box.style.borderTopLeftRadius = `${leftTop.value}px`;
       box.style.borderBottomLeftRadius = `${leftTop.value}px`;
       box.style.borderTopRightRadius = `${leftTop.value}px`;
@@ -104,6 +107,9 @@
     }
 
     if (receivedTarget === rightTop) {
+      leftTop.value = 0;
+      leftBottom.value = 0;
+      rightBottom.value = 0;
       box.removeAttribute("style");
       box.style.borderTopLeftRadius = `${rightTop.value}px`;
       box.style.borderBottomLeftRadius = `${rightTop.value}px`;
@@ -112,6 +118,9 @@
     }
 
     if (receivedTarget === leftBottom) {
+      leftTop.value = 0;
+      rightTop.value = 0;
+      rightBottom.value = 0;
       box.removeAttribute("style");
       box.style.borderTopLeftRadius = `${leftBottom.value}px`;
       box.style.borderBottomLeftRadius = `${leftBottom.value}px`;
@@ -120,6 +129,9 @@
     }
 
     if (receivedTarget === rightBottom) {
+      leftTop.value = 0;
+      rightTop.value = 0;
+      leftBottom.value = 0;
       box.removeAttribute("style");
       box.style.borderTopLeftRadius = `${rightBottom.value}px`;
       box.style.borderBottomLeftRadius = `${rightBottom.value}px`;
